@@ -1,0 +1,17 @@
+[
+  {
+    "source": "ai_intro.pdf",
+    "chunk_id": 0,
+    "text": "Title: What is Artificial Intelligence?\nArtificial Intelligence (AI) is the simulation of human intelligence processes by machines,\nespecially computer systems. These processes include learning, reasoning, and self-correction.\nAI is used in applications ranging from speech recognition to medical diagnosis.\nModern AI applications often use large-scale machine learning algorithms trained on big\ndatasets. Common fields within AI include natural language processing, robotics, and expert\nsystems."
+  },
+  {
+    "source": "space_exploration.pdf",
+    "chunk_id": 0,
+    "text": "Title: Space Exploration History\nSpace exploration began in the 20th century with the launch of the first artificial satellites. The\nSoviet Union\u2019s Sputnik was the first satellite to orbit Earth in 1957, marking the beginning of the\nspace age.\nSince then, both robotic and human missions have advanced our understanding of the solar\nsystem. NASA\u2019s Apollo missions landed the first humans on the moon, and space telescopes\nlike Hubble continue to observe distant galaxies."
+  },
+  {
+    "source": "coffee_culture.pdf",
+    "chunk_id": 0,
+    "text": "Title: The Rise of Coffee Culture\nCoffee has grown beyond being just a beverage\u2014it\u2019s now a global cultural phenomenon.\nFrom small cafes in Italy to large franchises in America, coffee serves as both a stimulant\nand a social connector.\nIn recent years, third-wave coffee movements emphasize sustainability, fair trade, and\nartisanal brewing methods. Baristas now treat coffee with the same care as sommeliers\ndo wine."
+  }
+]
