@@ -4,3 +4,10 @@ sentence-transformers
 faiss-cpu
 langchain
 pdfplumber
+tqdm
+protobuf
+sentencepiece
+requests
+wikipedia
+langchain-community
+langchain-huggingface

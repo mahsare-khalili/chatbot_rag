@@ -1,0 +1,29 @@
+# 📚 RAG-Powered PDF Chatbot
+Answer questions from your own PDFs using a local LLM (FLAN-T5), semantic search (FAISS), and intelligent fallback.
+
+
+
+# === STRUCTURE OVERVIEW ===
+
+project/
+ ├── main.py                    # Main entry point. Tries vector + RAG, falls back if needed
+ ├── configs/
+ │   └── settings.py            # Central configuration (model names, paths, thresholds, etc.)
+ ├── ingest/
+ │   └── run_ingest.py          # Loads PDFs, chunks text, embeds via SentenceTransformer, saves to FAISS + metadata
+ ├── retriever/
+ │   └── langchain_retriever.py # Retrieves top-K relevant chunks using vector similarity search
+ ├── models/
+ │   └── langchain_qa.py        # Generates an answer using Flan-T5 from HuggingFace Transformers
+ ├── fallback/
+ │   ├── wikipedia_fallback.py  # Fallback using Wikipedia (via wikipedia package)
+ │   └── duckduckgo_fallback.py # Fallback using DuckDuckGo API (if enabled in settings)
+ ├── utils/
+ │   └── chunking.py            # Shared chunking logic (sliding windows, overlap, etc.)
+ ├── pdfs/                      # Input directory for raw documents (PDFs)
+ ├── vectorstore/
+ │   ├── index.faiss            # FAISS vector index file
+ │   └── metadata.json          # Metadata for associated chunks (source doc, chunk ID, etc.)
+ ├── requirements.txt           # Dependency list for Python environment
+ ├── README.md                  # Project overview, usage, structure, and setup instructions
+ └── .env                       # (Optional) API keys or environment variables
