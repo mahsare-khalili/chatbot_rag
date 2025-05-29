@@ -11,3 +11,4 @@ requests
 wikipedia
 langchain-community
 langchain-huggingface
+streamlit

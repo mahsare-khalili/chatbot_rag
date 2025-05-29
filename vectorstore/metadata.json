@@ -1,14 +1,14 @@
 [
   {
     "source": "ai_intro.pdf",
-    "chunk_id": 0
+    "chunk_id": 1
   },
   {
     "source": "space_exploration.pdf",
-    "chunk_id": 0
+    "chunk_id": 1
   },
   {
     "source": "coffee_culture.pdf",
-    "chunk_id": 0
+    "chunk_id": 1
   }
 ]

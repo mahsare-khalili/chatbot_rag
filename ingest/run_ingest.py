@@ -22,8 +22,10 @@ for file in os.listdir(PDF_DIR):
     path = os.path.join(PDF_DIR, file)
     with pdfplumber.open(path) as pdf:
         full_text = ''.join(page.extract_text() or '' for page in pdf.pages)
-    for idx, chunk in enumerate(chunk_text(full_text, size=750)):
-        docs.append(Document(page_content=chunk, metadata={'source': file, 'chunk_id': idx}))
+    for idx, chunk in enumerate(chunk_text(full_text, size=750), start=1):
+        docs.append(Document(
+            page_content=chunk, 
+            metadata={'source': file, 'chunk_id': idx}))
 
 # Embed all chunks
 embeddings = SentenceTransformerEmbeddings(model_name=EMBEDDING_MODEL)
