@@ -8,7 +8,9 @@ Answer questions from your own PDFs using a local LLM (FLAN-T5), semantic search
 project/
  ├── main.py                    # Main entry point. Tries vector + RAG, falls back if needed
  ├── configs/
- │   └── settings.py            # Central configuration (model names, paths, thresholds, etc.)
+ │   └── settings.py              # Main entry point. Tries vector + RAG, falls back if needed
+ ├── core/
+ │   └── chatbot_core.py          # Shared logic for app & CLI
  ├── ingest/
  │   └── run_ingest.py          # Loads PDFs, chunks text, embeds via SentenceTransformer, saves to FAISS + metadata
  ├── retriever/
